@@ -1,0 +1,94 @@
+{
+  "version": "0.0.1",
+  "name": "ControlNet",
+  "type": "override",
+  "fields": [
+    {
+      "label": "Image",
+      "name": "image",
+      "type": "image",
+      "width": "100%"
+    },
+    {
+      "label": "Model",
+      "name": "model",
+      "type": "select",
+      "width": "100%",
+      "selectOptions": {
+        "items": [
+          {
+            "label": "Tile",
+            "value": "tile"
+          },
+          {
+            "label": "Instruct Pix2Pix",
+            "value": "p2p"
+          },
+          {
+            "label": "Shuffle",
+            "value": "shuffle"
+          },
+          {
+            "label": "Normal",
+            "value": "normal"
+          },
+          {
+            "label": "Depth",
+            "value": "depth"
+          },
+          {
+            "label": "Canny Edge",
+            "value": "canny"
+          },
+          {
+            "label": "M-LSD Lines",
+            "value": "mlsd"
+          },
+          {
+            "label": "Scribbles",
+            "value": "scribble"
+          },
+          {
+            "label": "Open Pose",
+            "value": "openpose"
+          },
+          {
+            "label": "Semantic Segmentation",
+            "value": "seg"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Resize mode",
+      "name": "resize_mode",
+      "type": "select",
+      "width": "100%",
+      "defaultValue": "cover",
+      "selectOptions": {
+        "items": [
+          {
+            "label": "Cover",
+            "value": "cover"
+          },
+          {
+            "label": "Contain",
+            "value": "contain"
+          },
+          {
+            "label": "Contain start",
+            "value": "contain_start"
+          },
+          {
+            "label": "Contain end",
+            "value": "contain_end"
+          },
+          {
+            "label": "Fill",
+            "value": "fill"
+          }
+        ]
+      }
+    }
+  ]
+}
